@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+  <div fxFlex="nogrow">
+    <app-checkbox
+      [checked]="task.done"
+      (changed)="changeStatus($event)"
+    ></app-checkbox>
+  </div>
+  <div fxFlex="grow" fxLayout="column">
+    <div fxFlex="grow" class="tt test">
+      {{ task.label }}
+    </div>
+    <div class="tt text sm oneline">
+      {{ task.description }}
+    </div>
+  </div>
+  <div fxFlex="nogrow" fxLayout="row" fxLayoutGap="5px">
+    <app-button>Edit</app-button>
+    <app-button (clicked)="delete()">Delete</app-button>
+  </div>
+</div>

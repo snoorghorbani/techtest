@@ -1,0 +1,5 @@
+<div class="tt shadow white box p24" fxLayout="column" fxLayoutGap="10px">
+  <div *ngFor="let task of tasks$ | async; trackby: trackById" fxFlex>
+    <app-task-list-item [task]="task"></app-task-list-item>
+  </div>
+</div>

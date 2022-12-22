@@ -1,0 +1,10 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="center center" class="hfull">
+    <div fxFlex="0 1 500px" class="tt white shadow box p16">
+      <ng-content></ng-content>
+      <ng-content select="[title]"></ng-content>
+      <ng-content select="[body]"></ng-content>
+      <ng-content select="[actions]"></ng-content>
+    </div>
+  </div>
+</div>

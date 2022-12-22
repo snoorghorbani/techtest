@@ -1,0 +1,60 @@
+@import "./app.var.scss";
+
+.tt.text{
+  font-variation-settings: "wght" 400, "dots" 1;
+
+  &.hg {
+    font-size: 19px !important;
+  }
+  &.lg {
+    font-size: 17px !important;
+  }
+  &.sm {
+    font-size: 13px !important;
+    line-height: 24px;
+  }
+  &.tn {
+    font-size: 10px !important;
+  }
+  &.red {
+    color: red;
+  }
+  &.gray {
+    color: #666;
+  }
+  &.blue {
+    color: #2196f3;
+  }
+  &.white {
+    color: #fff;
+  }
+  &.oneline {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &.nowrap {
+    white-space: nowrap;
+  }
+  &.thin {
+    font-variation-settings: "wght" 100;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.bolder {
+    font-weight: bolder;
+  }
+  &.justify {
+    text-align: justify;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.start {
+    text-align: start;
+  }
+}

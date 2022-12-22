@@ -1,0 +1,12 @@
+@import "./app.var.scss";
+
+.tt {
+	&.bg {
+		&.grey {
+			background-color: $grey;
+		}
+		&.blue {
+			background-color: $blue;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+@import "./app.var.scss";
+
+.tt {
+  &.box {
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: $radius;
+    overflow: hidden;
+    &.borderless{
+      border: none;
+      outline: none;
+    }
+    &.relative {
+      position: relative;
+    }
+    &.gray {
+      background: #e5e5e5;
+    }
+    &.white {
+      background: white;
+    }
+    &.squire {
+      border-radius: 0px !important;
+    }
+    &.double.radius {
+      border-radius: $radius*2 !important;
+    }
+    &.overflow {
+      &.visible {
+        overflow: visible !important;
+      }
+    }
+    &.shadow {
+      box-shadow: $boxShadow;
+      transition: box-shadow 333ms;
+      &.pointer:hover {
+        box-shadow: 3px 3px 5px #cccc;
+      }
+    }
+    &.highlight {
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      border-right: 5px solid #ff9800;
+      font-size: 14px;
+      background: #ffecb3;
+      b.bold {
+        text-decoration-thickness: 18px;
+        color: #ff5722;
+        font-family: "iran-sans-bold";
+        font-size: 15px;
+      }
+    }
+    &.margin {
+      margin: 16px;
+      &.none {
+        margin: 0 !important;
+      }
+    }
+    &.padding {
+      padding: 16px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<app-dialog>
+  <span title>Add New Task</span>
+  <div body>
+    <div class="tt my40">
+      <app-input
+        #labelEl
+        [value]="task.label"
+        type="text"
+        placeholder="Enter label"
+      ></app-input>
+    </div>
+  </div>
+  <div actions fxLayout="row" fxLayoutGap="5px">
+    <app-button (clicked)="create()">create</app-button>
+    <app-button (click)="close()">cancel</app-button>
+  </div>
+</app-dialog>

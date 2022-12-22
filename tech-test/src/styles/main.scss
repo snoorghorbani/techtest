@@ -1,0 +1,89 @@
+@import "./app.var.scss";
+@import "./text.scss";
+@import "./box.scss";
+@import "./paper.scss";
+@import "./bg.scss";
+@import "./align.scss";
+@import "./animation.scss";
+
+$spacing: 8px;
+@for $i from 0 through 30 {
+  .w#{$i * 8} {
+    width: $spacing * $i !important;
+  }
+  .h#{$i * 8} {
+    height: $spacing * $i !important;
+  }
+  .d#{$i * 8} {
+    width: $spacing * $i !important;
+    height: $spacing * $i !important;
+  }
+  .p#{$i * 8} {
+    padding: $spacing * $i;
+  }
+  .pr#{$i * 8} {
+    padding-right: $spacing * $i;
+  }
+  .pl#{$i * 8} {
+    padding-left: $spacing * $i;
+  }
+  .px#{$i * 8} {
+    padding-right: $spacing * $i;
+    padding-left: $spacing * $i;
+  }
+  .pt#{$i * 8} {
+    padding-top: $spacing * $i;
+  }
+  .pb#{$i * 8} {
+    padding-bottom: $spacing * $i;
+  }
+  .py#{$i * 8} {
+    padding-top: $spacing * $i;
+    padding-bottom: $spacing * $i;
+  }
+  .m#{$i * 8} {
+    margin: $spacing * $i;
+  }
+  .mr#{$i * 8} {
+    margin-right: $spacing * $i;
+  }
+  .ml#{$i * 8} {
+    margin-left: $spacing * $i;
+  }
+  .mx#{$i * 8} {
+    margin-right: $spacing * $i;
+    margin-left: $spacing * $i;
+  }
+  .mt#{$i * 8} {
+    margin-top: $spacing * $i;
+  }
+  .mb#{$i * 8} {
+    margin-bottom: $spacing * $i;
+  }
+  .my#{$i * 8} {
+    margin-top: $spacing * $i;
+    margin-bottom: $spacing * $i;
+  }
+}
+.wfull {
+  width: 100%;
+}
+.hfull {
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.rounded {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.noselect {
+  user-select: none !important;
+  * {
+    user-select: none !important;
+  }
+}

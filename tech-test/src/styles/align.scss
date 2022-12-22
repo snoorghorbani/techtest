@@ -1,0 +1,10 @@
+@import "./app.var.scss";
+
+.align {
+	&.vertical {
+		&.center {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

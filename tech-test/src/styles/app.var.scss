@@ -1,0 +1,32 @@
+$main_color: #56c1e9;
+$second_color: #313131;
+$third_color: #e2e2e2;
+$grey: #e2e2e2;
+$fourth_color: #f7f7f7;
+$bg_color: #fafafa;
+$blue: #4285f4;
+$red: #ea4335;
+$yellow: #fbbc05;
+$yellowdark: #ffc107;
+$green: #34a853;
+
+$radius: 5px;
+$boxShadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+
+:root {
+  --radius: 5px;
+  --brand-color: #4b92db;
+  --full-height: calc(var(--vh) - 1px);
+}
+
+$xs: 600px;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px;
+$xl: 1920px;
+
+$brandGradiant: linear-gradient(45deg, #1976d2 0%, #2196f3 100%);
+
+@function vh($percent: 100) {
+  @return calc(var(--vh) * #{$percent} / 100);
+}
